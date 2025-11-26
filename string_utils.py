@@ -20,7 +20,7 @@ def split_at_digit(formula):
     for char_index, char in enumerate(formula):
         if char.isdigit():
             return formula[:char_index], int(formula[char_index:])
-    return formula, 1
+    return formula, 1 
 
 def count_atoms_in_molecule(molecular_formula):
     atoms_count_dict = {}
